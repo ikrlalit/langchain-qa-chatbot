@@ -44,15 +44,21 @@ langchain-qa-chatbot/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/qa_chatbot.git
-cd qa_chatbot
+git clone https://github.com/ikrlalit/langchain-qa-chatbot.git
+cd langchain-qa-chatbot
 ```
 
 ### 2. Create Virtual Environment (Optional but Recommended)
 ```bash
+# On Windows
+python -m venv venv
+venv\Scripts\activate        
+```
+
+```bash
+# On Linux/Mac
 python3 -m venv venv
-source venv/bin/activate     # On Linux/Mac
-venv\Scripts\activate        # On Windows
+source venv/bin/activate           
 ```
 
 ### 3. Install Dependencies
@@ -114,30 +120,8 @@ A: Employees are entitled to 24 paid leaves per year...
 
 ## 🚀 Future Enhancements
 - 📑 Support **DOCX/Word uploads**
-- 🗄️ Multi-file ingestion
+- 🗄️ Multi-file ingestion support, e.g. docx, csv, image, etc
 - 💾 Persist vector DB for re-using documents
 - 🌐 Add external tools (Web Search, SQL DB)
 - 🔒 Authentication for multi-user usage
-
----
-
-## 🧪 Testing
-Run unit tests:
-```bash
-pytest tests/
-```
-
----
-
-## 🤝 Contributing
-Contributions are welcome!  
-- Fork the repo  
-- Create a new branch  
-- Commit changes  
-- Open a Pull Request  
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.  
 
