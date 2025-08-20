@@ -11,18 +11,17 @@ It uses:
 ---
 
 ## ✨ Features
-- 📤 Upload a **PDF/TXT file**
-- 🤖 Ask **questions** about the uploaded document
-- 🧠 **Conversational memory** to maintain context
-- 🔎 **Retrieval-Augmented Generation (RAG)** using FAISS vector search
-- ⚡ **Groq-powered LLM** for fast and accurate answers
-- 🎛️ Modular backend (`llm.py`, `chains.py`, `vectorstore.py`)  
+-  Upload a **PDF/TXT file**
+- Ask **questions** about the uploaded document
+- **Conversational memory** to maintain context
+- **Retrieval-Augmented Generation (RAG)** using FAISS vector search
+- **Groq-powered LLM** for fast and accurate answers
 
 ---
 
 ## 🏗️ Project Structure
 ```
-qa_chatbot/
+langchain-qa-chatbot/
 │── app.py                   # Streamlit app (UI)
 │── requirements.txt         # Dependencies
 │── .env                     # Secrets (API keys)
@@ -35,10 +34,8 @@ qa_chatbot/
 │   └── chains.py            # Q&A retrieval chain
 │
 ├── data/
-│   └── sample.txt           # Example document
-│
-└── tests/
-    └── test_chain.py        # Unit tests
+    └── sample.pdf           # Uploaded documents
+
 ```
 
 ---
@@ -143,3 +140,4 @@ Contributions are welcome!
 
 ## 📜 License
 This project is licensed under the **MIT License**.  
+
